@@ -84,7 +84,12 @@ Spouštění vždy prvního dne v měsíci
 
 ## 3. Dokumentace testování
 
+Podle postupu řešení byly nachystány scripty.
+Instalace Cronu proběhla úspěšně, proces se taky spouštěl podle zadání.
+![Testování cron](test1.png)
 
+Pouze první spuštění proběhlo se zasíláním dat do databáze, jelikož na žádné další již nebyly nové procesy.
+![Spouštění](test2.png)
 
 ## 4. Rozdělení práce
 
@@ -114,17 +119,13 @@ Pomocí PID běžících procesů se vypočítá SHA256 otisk z jejich souboru.
 
 Úloha měla být původně řešená pomocí nástroje nmap, přes který se nepodařilo úspěšně odeslat požadavek do VirusTotal. Dotaz se v nynější verzi do VirusTotal odesílá pomocí příkazu curl.
 
-### 5.3. Varianty řešení
-
-
-
-### 5.4. Doporučení
+### 5.3. Doporučení
 
 V bezplatné verzi VirusTotal je omezená kapacita používání API klíčů, proto doporučujeme bezplatným uživatelům odkomentovat řádek 24, aby obsahoval příkaz:
 
     sleep 25
 
-### 5.5. Rozšíření
+### 5.4. Rozšíření
 
 VirusTotal nabízí i mnoho dalších návratových hodnot, které se dají prozkoumat.
 
